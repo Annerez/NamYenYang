@@ -9,22 +9,30 @@
     <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
     <script src="app.js" type="module"></script>
 </head>
-<body class="box-border p-0 m-0" style="font-family: 'Lexend Deca', sans-serif;">
+<body id="body" class="box-border p-0 m-0" style="font-family: 'Lexend Deca', sans-serif;">
     <h1 class="font-bold text-6xl mt-12 mb-12 flex justify-center">NamYengYang?</h1>
     <div class="flex-row container w-4/5 mx-auto">
         <div class="flex flex-row justify-center items-start flex-wrap gap-x-10 gap-y-12 mt-8">
-            <div class="flex flex-col shadow-lg shadow-slate-400/50 jusity-center text-center items-center w-80 h-80 rounded-2xl hover:scale-105 duration-300 ease-in-out border-solid border-2 border-sky-500">
-                <img alt="tempo" src="./icon/nam.png" class="object-cover w-48 h-48">
-                <h1 class="font-bold text-4xl">NamYenYang?</h1>
-                <h1  id="temp" class="text-2xl font-bold">0</h1>
-                <h1  id="yeng" class="text-2xl font-bold">Yes</h1>
+            <button id="check" class="flex flex-row cursor-pointer justify-center items-center w-80 h-80 bg-sky-400 rounded-full hover:scale-105 duration-300 ease-in-out">
+                <h1 class="flex font-bold text-4xl">Check</h1>
+            </button>
+            <div id="show" class="hidden flex flex-col justify-center items-start">
+                <div class="flex flex-col shadow-lg mb-8 justify-center text-center items-center w-80 h-80 rounded-2xl hover:scale-105 duration-300 ease-in-out">
+                    <h1 class="font-bold text-4xl">NamYenYang?</h1>
+                </div>
+                <div class="text-2xl font-bold flex gap-x-8">
+                    <h1>Temperature: <h1 id="temp">16°C</h1></h1>
+                </div>
+                <div class="text-2xl font-bold flex gap-x-20">
+                    <h1>YenYang: <h1 id="yeng">No</h1></h1>
+                </div>
             </div>
         </div>
     </div>
     <footer>
         <hr class="mx-24 mt-24">
         <div class="flex flex-col items-center">
-            <div class=" italic font-bold mt-8 mb-8">Copyright © 2022. Stupid Hackathon All rights reserved</div>
+            <div class=" italic font-bold mt-8 mb-8">Made at The 7th Stupid Hackathon of Thailand</div>
         </div>
     </footer>
 </body>
