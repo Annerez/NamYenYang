@@ -16,8 +16,8 @@ const analytics = getAnalytics(app);
 const db = getDatabase(app);
 
 const refs = {
-temp: ref(db, 'SmartFarm/Temperature'),
-yeng: ref(db, 'SmartFarm/Humidity'),
+temp: ref(db, 'Namyenyang/Temp'),
+yeng: ref(db, 'Namyenyang/Yeng'),
 };
 
 for (const key in refs) {
